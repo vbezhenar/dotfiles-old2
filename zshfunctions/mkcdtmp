@@ -1,0 +1,3 @@
+mkcdtmp() {
+    mkcd ~/tmp/"$(date '+%y%m%d')"
+}

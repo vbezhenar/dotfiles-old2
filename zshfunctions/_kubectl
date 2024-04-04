@@ -1,0 +1,4 @@
+_kubectl() {
+  source <(kubectl completion zsh)
+  _kubectl $@
+}

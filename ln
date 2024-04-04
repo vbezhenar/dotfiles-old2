@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+set -o errexit
+set -o nounset
+
+mkdir -p ~/.config/git
+ln -s -i ../../dotfiles/config/git/ignore ~/.config/git/ignore
+ln -s -i dotfiles/gdbinit ~/.gdbinit
+ln -s -i dotfiles/gitconfig ~/.gitconfig
+mkdir -p ~/.ssh
+ln -s -i ../dotfiles/ssh/9-all.config ~/.ssh/9-all.config
+ln -s -i ../dotfiles/ssh/config ~/.ssh/config
+ln -s -i ../dotfiles/ssh/known_public_hosts ~/.ssh/known_public_hosts
+ln -s -i dotfiles/vimrc ~/.vimrc
+mkdir -p ~/.zshfunctions
+ln -s -i ../dotfiles/zshfunctions/_kubectl ~/.zshfunctions/_kubectl
+ln -s -i ../dotfiles/zshfunctions/mkcd ~/.zshfunctions/mkcd
+ln -s -i ../dotfiles/zshfunctions/mkcdtmp ~/.zshfunctions/mkcdtmp
+ln -s -i dotfiles/zshrc ~/.zshrc
